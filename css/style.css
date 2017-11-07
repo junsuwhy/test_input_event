@@ -1,0 +1,140 @@
+/*@import url(//fonts.googleapis.com/earlyaccess/cwtexhei.css);*/
+
+.reveal p{
+    font-size: .6em;
+}
+
+.reveal *{
+    font-family: 'cwTeXHei', sans-serif;
+}
+
+div#wrapper{
+    padding:10px 0 70px 0;
+    margin:0px auto;
+    text-align:left;
+    width:100%;
+}
+#header{
+    position:fixed;
+	top:0px;
+    width:100%;
+    z-index:999;
+}
+.reveal .slides{
+    text-align: left;
+}
+
+.next {
+    background-color: #ffeb88;
+/*    border-color: #C24B23;*/
+    color: #222;
+    font-size: .6em;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+.reveal input[type=radio] {
+    margin-top:30px;
+    vertical-align: bottom;
+}
+.reveal img{
+    width: auto;
+}
+@media screen and (max-width: 480px) {
+    .reveal img{
+        width: 100%;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    .reveal p {
+        font-size: .8em;
+    }
+    .reveal h2{
+        font-size: 1.6em;
+    }
+    .reveal h3{
+/*        font-size: 1.6em;*/
+    }
+    .reveal .next{
+        font-size: .8em;
+        margin-top: 15px;
+        padding: 20px 40px;
+/*        line-height:1.5em*/
+    }
+}
+
+
+
+
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: -7px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #222;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+input[type=radio]:hover {
+  background: #9faab7;
+}
+input[type=radio]:checked {
+  background: #ffeb88;
+}
+input[type=radio]:checked::before {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 26.66667px;
+  text-align: center;
+  line-height: 40px;
+}
+input[type=radio]:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #ffeb88;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+input[type=radio] {
+  border-radius: 50%;
+}
+input[type=radio]::after {
+  border-radius: 50%;
+}

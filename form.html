@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/jquery.js"></script>
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/jquery-ui/js/jquery-ui-1.9.1.custom.min.js"></script>
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/jquery-ui/development-bundle/ui/i18n/jquery.ui.datepicker-zh-TW.js"></script>
+<style type="text/css">@import url("https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/jquery-ui/css/custom-theme/jquery-ui-1.9.1.custom.css");</style>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/flexigrid.js"></script>
+<style type="text/css">@import url("https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/css/flexigrid.css");</style>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jquery.autocomplete.js"></script>
+<style type="text/css">@import url("https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/css/jquery.autocomplete.css");</style>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jsTree.v.1.0rc2/jquery.jstree.min.js"></script>
+<style type="text/css">@import url("https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jsTree.v.1.0rc2/themes/default/style.css");</style>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jquery.menu.pack.js"></script>
+<style type="text/css">@import url("https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/css/menu.css");</style>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jquery.chainedSelects.js"></script>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jquery.contextMenu.js"></script>
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jquery.tableHeader.js"></script>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/checkboxselect.js"></script>
+
+    <script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jquery.textarearesizer.js"></script>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jquery.form.js"></script>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jquery.tokeninput.js"></script>
+<style type="text/css">@import url("https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/css/token-input-facebook.css");</style>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jquery.timeentry.pack.js"></script>
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jquery.mousewheel.pack.js"></script>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jquery.toolTip.js"></script>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/DataTables-1.7.2/media/js/jquery.dataTables.min.js"></script>
+<style type="text/css">@import url("https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/DataTables-1.7.2/media/css/demo_table_jui.css");</style>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jquery.FormNavigate.js"></script>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jquery.chosen.js"></script>
+<style type="text/css">@import url("https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/css/jquery.chosen.css");</style>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jquery.simplemodal.min.js"></script>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/js/rest.js"></script>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/js/jquery/jquery.crmaccordions.js"></script>
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/js/jquery/jquery.crmasmselect.js"></script>
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/js/jquery/jquery.crmtooltip.js"></script>
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/js/jquery/jquery.disablesubmit.js"></script>
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/plugins/jquery.dashboard.js"></script>
+<style type="text/css">@import url("https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/jquery/css/dashboard.css");</style>
+
+
+<script type="text/javascript">var cj = jQuery.noConflict(); $ = cj;</script>
+
+<style type="text/css">@import url("https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/fontawesome/css/font-awesome.min.css");</style>
+
+<style type="text/css">@import url("https://dev7.neticrm.tw/sites/all/modules/civicrm/packages/material-design-iconic-font/css/material-design-iconic-font.min.css");</style><form  action="https://dev7.neticrm.tw/civicrm/profile/create?gid=1&amp;reset=1" method="post" name="Edit" id="Edit" >
+
+
+
+  <div><input name="pageKey" type="hidden" value="CRM_UF_Page_Group_1uAKJf5e" />
+<input name="submit_once_check" type="hidden" value="submit-once-59a62f57d3705" />
+<input name="_qf_default" type="hidden" value="Edit:next" />
+</div>
+
+
+
+<script type="text/javascript" src="https://dev7.neticrm.tw/sites/all/modules/civicrm/js/Common.js"></script>
+<div id="crm-container" class="crm-container" lang="zh" xml:lang="zh">
+            <div class="form-layout-compressed"><div id="editrow-last_name" class="crm-section editrow_last_name-section form-item"><div class="label"><label for="last_name">  姓氏
+     <span class="crm-marker" title="此欄位不可空白。">*</span>
+</label></div><div class="edit-value content"><div class="crm-form-elem crm-form-textfield"><input maxlength="64" size="30" name="last_name" type="text" id="last_name" class="form-text big required" /></div></div><div class="clear"></div></div><div id="editrow-first_name" class="crm-section editrow_first_name-section form-item"><div class="label"><label for="first_name">  名字
+     <span class="crm-marker" title="此欄位不可空白。">*</span>
+</label></div><div class="edit-value content"><div class="crm-form-elem crm-form-textfield"><input maxlength="64" size="30" name="first_name" type="text" id="first_name" class="form-text big required" /></div></div><div class="clear"></div></div><div class="crm-section helprow-first_name-section" id="helprow-first_name"><div class="content description">其他人將無法看見您輸入的資訊，請您放心。</div></div><div id="editrow-state_province-1" class="crm-section editrow_state_province-1-section form-item"><div class="label"><label for="state_province-1">縣市（住家）</label></div><div class="edit-value content"><div class="crm-form-elem crm-form-select crm-form-select-single"><select name="state_province-1" id="state_province-1" class="form-select">
+	<option value="">- 選擇 -</option>
+	<option value="4855">南投縣</option>
+	<option value="5222">嘉義市</option>
+	<option value="4849">嘉義縣</option>
+	<option value="4864">基隆市</option>
+	<option value="4852">宜蘭縣</option>
+	<option value="4857">屏東縣</option>
+	<option value="4848">彰化縣</option>
+	<option value="4860">新北市</option>
+	<option value="5223">新竹市</option>
+	<option value="4850">新竹縣</option>
+	<option value="4862">桃園市</option>
+	<option value="4856">澎湖縣</option>
+	<option value="5219">臺中市</option>
+	<option value="5221">臺北市</option>
+	<option value="5224">臺南市</option>
+	<option value="4861">臺東縣</option>
+	<option value="4851">花蓮縣</option>
+	<option value="4854">苗栗縣</option>
+	<option value="5225">連江縣</option>
+	<option value="5226">金門縣</option>
+	<option value="4863">雲林縣</option>
+	<option value="5220">高雄市</option>
+</select></div></div><div class="clear"></div></div><div id="editrow-city-1" class="crm-section editrow_city-1-section form-item"><div class="label"><label for="city-1">鄉鎮市區（住家）</label></div><div class="edit-value content"><div class="crm-form-elem crm-form-textfield"><input maxlength="64" size="30" name="city-1" type="text" id="city-1" class="form-text big" /></div></div><div class="clear"></div></div><div id="editrow-postal_code-1" class="crm-section editrow_postal_code-1-section form-item"><div class="label"><label for="postal_code-1">郵遞區號（住家）</label></div><div class="edit-value content"><div class="crm-form-elem crm-form-textfield"><input maxlength="12" size="12" name="postal_code-1" type="text" id="postal_code-1" class="form-text twelve" /></div></div><div class="clear"></div></div><div id="editrow-street_address-1" class="crm-section editrow_street_address-1-section form-item"><div class="label"><label for="street_address-1">街道地址（住家）</label></div><div class="edit-value content"><div class="crm-form-elem crm-form-textfield"><input maxlength="96" size="45" name="street_address-1" type="text" id="street_address-1" class="form-text huge" /></div></div><div class="clear"></div></div></div><!-- end form-layout-compressed for last profile --> <div class="crm-submit-buttons">
+   
+                                                                          <span class="crm-button crm-button-type-next crm-button_qf_Edit_next"><input data="submit-once" class="form-submit default" name="_qf_Edit_next" value="送出 &gt;&gt; " type="submit" id="_qf_Edit_next" /></span>
+    </div>
+
+</div> 
+<script type="text/javascript">
+  </script>
+ 
+
+<script type="text/javascript">
+    
+cj(document).ready(function(){ 
+	cj('#selector tr:even').addClass('odd-row ');
+	cj('#selector tr:odd ').addClass('even-row');
+});
+
+
+  cj('form input:not([type="submit"])').keydown(function (e) {
+    if (e.keyCode == 13) {
+      if(cj(this).attr('id') == 'neticrm_sort_name_navigation'){
+        return true;
+      }
+      var inputs = cj(this).parents("form").eq(0).find(':input:visible');
+      if (inputs[inputs.index(this) + 1] != null && ( inputs.index(this) + 1 ) < inputs.length) {                    
+          inputs[inputs.index(this) + 1].focus();
+      }
+      cj(this).blur();
+      e.preventDefault();
+      return false;
+    }
+  });
+</script>
+
+
+</form>
+
+<style>
+    .label{
+        color: white;
+    }
+</style>
+</body>
+</html>
